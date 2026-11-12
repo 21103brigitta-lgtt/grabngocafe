@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Grab n Go! Edinburgh — Location &amp; Hatch</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a class="brand" href="#">
+          <img alt="Grab n Go! Edinburgh Logo" class="brand-logo"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRLm0efgaPnzwy4eVOLjxKrdFDx1dQaRipD3A9UMlK5FbaaaxmqYH0Jnvo0Q3qB4NnMm1j1pQucCsIpX-T_PKq9vYI6AJcs4ftgjjx6bdl6xz_lrwUDBLpCrOOdRmEIem1Bi-SJ4Nh5tWyleW2rHOYgNKMd96satE8BN3SNKQFQjbCW5U8oYB_VJ2W3bQGGAUo4NMd938LmgyZJhc1kK1MfwUrVGCiHAHgrtGBBQ" />
+          <span class="brand-text">
+            <span class="brand-name">Grab n Go! Edinburgh</span>
+            <span class="brand-tagline">Artisan Bakery &amp; Hatch</span>
+          </span>
+        </a>
+        <span class="prep-pill">
+          <span class="material-symbols-outlined icon-sm" style="color:var(--primary)">bolt</span>
+          <span>Prep: ~4m pick-up</span>
+        </span>
+      </div>
+
+      <nav class="main-nav">
+        <a class="nav-link" href="/home.html">Home</a>
+        <a class="nav-link" href="/menu.html">Menu &amp; Ordering</a>
+        <a class="nav-link" href="/about.html">About &amp; Story</a>
+        <a class="nav-link nav-link--active" href="/location.html">Location &amp; Hatch</a>
+        <a class="nav-link" href="/cs.html">Fast Order &amp; WhatsApp</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary" href="#">
+          <span class="material-symbols-outlined icon-sm">shopping_bag</span>
+          <span>Order Now!</span>
+        </a>
+        <span class="icon-btn" style="background:var(--surface-container-high);color:var(--on-surface);">
+          <span class="material-symbols-outlined icon-sm">support_agent</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="page-main">
+
+    <!-- ===== LIVE TICKER ===== -->
+    <section class="live-ticker">
+      <div class="container">
+        <div class="live-ticker-inner">
+          <div class="ticker-left">
+            <span class="ticker-open">
+              <span class="ticker-dot"></span>
+              BUKA SEKARANG
+            </span>
+            <span class="ticker-primary-text">Hatch Utama Waverley (EH1 1DE)</span>
+            <span class="ticker-sep ticker-hide-sm">•</span>
+            <span class="ticker-hide-sm">Rata-rata Waktu Tunggu: <span class="ticker-strong">1 Menit 45 Detik</span></span>
+          </div>
+          <div class="ticker-right">
+            <span class="ticker-item">
+              <span class="material-symbols-outlined icon-sm">timer</span>
+              Rush Hour: 07:45 – 08:30 GMT
+            </span>
+            <span class="ticker-item ticker-hide-md">
+              <span class="material-symbols-outlined icon-sm is-green">pedal_bike</span>
+              Area Pejalan Kaki Market St. Bebas Kendaraan
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HERO LOCATION ===== -->
+    <section class="hero-location">
+      <div class="container hero-location-inner">
+
+        <div class="hero-location-head">
+          <div class="hero-location-head-copy">
+            <div class="section-overline">
+              <span class="material-symbols-outlined icon-sm">near_me</span>
+              Lokasi Strategis Pejalan Kaki Edinburgh
+            </div>
+            <h1 class="hero-location-title">Temukan Kami di Jantung Edinburgh</h1>
+            <p class="hero-location-desc">
+              Dirancang khusus untuk ritme komuter urban, pelancong kereta, dan mahasiswa Universitas Edinburgh yang membutuhkan kopi artisanal serta roti sourdough hangat tanpa membuang waktu satu detik pun.
+            </p>
+          </div>
+          <div class="hud-card">
+            <span class="hud-icon">
+              <span class="material-symbols-outlined icon-lg">directions_walk</span>
+            </span>
+            <div>
+              <div class="hud-label">Akses Langsung</div>
+              <div class="hud-value">120 Langkah dari Peron</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-banner">
+          <div class="map-banner-canvas" data-location="42 Market Street, Edinburgh, EH1 1DE, Scotland"></div>
+          <span class="map-banner-scrim"></span>
+
+          <div class="map-badge-buttons">
+            <a class="map-btn map-btn--white" href="https://maps.google.com/?q=42+Market+Street+Edinburgh+EH1+1DE" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined icon-sm">open_in_new</span>
+              Buka di Google Maps
+            </a>
+            <a class="map-btn map-btn--primary" href="#wayfinding">
+              <span class="material-symbols-outlined icon-sm">navigation</span>
+              Petunjuk Arah Jalan Kaki
+            </a>
+          </div>
+
+          <div class="map-metrics-rail">
+            <div class="map-metrics-copy">
+              <div class="metrics-row">
+                <span class="material-symbols-outlined icon-md">storefront</span>
+                <span class="map-metrics-title">Hatch #1 — Market Street Walk-Up</span>
+              </div>
+              <p class="map-metrics-desc">
+                42 Market Street, Old Town Edinburgh, EH1 1DE (Tepat di bawah Scotsman Steps)
+              </p>
+            </div>
+
+            <div class="map-speed-pills">
+              <div class="speed-pill">
+                <span class="speed-pill-value speed-pill-value--primary">2 min</span>
+                <span class="speed-pill-label">Waverley Exit</span>
+              </div>
+              <div class="speed-pill">
+                <span class="speed-pill-value speed-pill-value--tertiary">3 min</span>
+                <span class="speed-pill-label">Royal Mile</span>
+              </div>
+              <div class="speed-pill">
+                <span class="speed-pill-value speed-pill-value--secondary">4 min</span>
+                <span class="speed-pill-label">George Square</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== HATCH BENTO ===== -->
+    <section class="section" style="padding-top:var(--space-lg);">
+      <div class="container">
+        <div class="hatch-bento">
+
+          <!-- Left: Hatch Info -->
+          <div class="hatch-spec">
+            <div>
+              <div class="hatch-spec-head">
+                <div>
+                  <span class="hatch-spec-label">Spesifikasi Lokasi</span>
+                  <h2 class="hatch-spec-title">Informasi Operasional &amp; Alamat Hatch</h2>
+                </div>
+                <span class="material-symbols-outlined icon-xl">store</span>
+              </div>
+
+              <div class="hatch-address-box">
+                <div class="hatch-address-row">
+                  <span class="material-symbols-outlined icon-lg">pin_drop</span>
+                  <div>
+                    <div class="hatch-address-title">42 Market Street, Old Town Edinburgh</div>
+                    <div class="hatch-address-text">Kode Pos: EH1 1DE (Kawasan Khusus Jalur Pejalan Kaki)</div>
+                    <div class="hatch-address-note">
+                      <span class="material-symbols-outlined icon-xs">info</span>
+                      Akses mulus untuk troli koper, sepeda lipat, dan stroller
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-grid">
+                <div class="schedule-card">
+                  <div class="schedule-label">
+                    <span class="material-symbols-outlined icon-sm">calendar_today</span>
+                    SENIN – JUMAT (Weekday Pulse)
+                  </div>
+                  <div class="schedule-time">06.30 – 18.30 GMT</div>
+                  <p class="schedule-note">Batch pertama roti sourdough keluar dari oven pukul 06.15.</p>
+                </div>
+                <div class="schedule-card">
+                  <div class="schedule-label is-tertiary">
+                    <span class="material-symbols-outlined icon-sm">weekend</span>
+                    SABTU – MINGGU (Weekend Trail)
+                  </div>
+                  <div class="schedule-time">07.00 – 19.00 GMT</div>
+                  <p class="schedule-note">Spesial cinnamon bun hangat &amp; pour-over single origin.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hatch-actions">
+              <a class="btn btn-primary" href="https://maps.google.com/?q=42+Market+Street+Edinburgh" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined icon-sm">map</span>
+                <span>Buka di Google Maps</span>
+              </a>
+              <a class="btn btn-secondary" href="tel:+621234565789">
+                <span class="material-symbols-outlined icon-sm" style="color:var(--primary)">call</span>
+                <span>Hubungi Hatch Manager (+62 1234565789)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Walk Matrix -->
+          <div class="walk-matrix">
+            <div>
+              <div class="walk-matrix-head">
+                <span class="walk-matrix-label">Matriks Kecepatan Komuter</span>
+                <span class="material-symbols-outlined icon-md">avg_pace</span>
+              </div>
+              <h3 class="walk-matrix-title">Estimasi Waktu Tempuh Jalan Kaki</h3>
+
+              <div class="walk-list">
+                <div class="route-item">
+                  <div class="route-info">
+                    <span class="route-icon route-icon--primary">
+                      <span class="material-symbols-outlined icon-md">train</span>
+                    </span>
+                    <div>
+                      <div class="route-title">Waverley Station (North Bridge Exit)</div>
+                      <div class="route-sub">Via Scotsman Steps / Jalur Bawah</div>
+                    </div>
+                  </div>
+                  <div class="route-time-block">
+                    <span class="route-time route-time--primary">2 min</span>
+                    <span class="route-distance">180 meter</span>
+                  </div>
+                </div>
+
+                <div class="route-item">
+                  <div class="route-info">
+                    <span class="route-icon route-icon--tertiary">
+                      <span class="material-symbols-outlined icon-md">castle</span>
+                    </span>
+                    <div>
+                      <div class="route-title">The Royal Mile / St Giles</div>
+                      <div class="route-sub">Turun lewat Anchor Close / Fleshmarket</div>
+                    </div>
+                  </div>
+                  <div class="route-time-block">
+                    <span class="route-time route-time--tertiary">3 min</span>
+                    <span class="route-distance">240 meter</span>
+                  </div>
+                </div>
+
+                <div class="route-item">
+                  <div class="route-info">
+                    <span class="route-icon route-icon--secondary">
+                      <span class="material-symbols-outlined icon-md">school</span>
+                    </span>
+                    <div>
+                      <div class="route-title">Univ of Edinburgh (George Sq.)</div>
+                      <div class="route-sub">Arah perpustakaan utama &amp; Old College</div>
+                    </div>
+                  </div>
+                  <div class="route-time-block">
+                    <span class="route-time route-time--secondary">4 min</span>
+                    <span class="route-distance">390 meter</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="walk-tip">
+              <span class="material-symbols-outlined icon-sm">verified</span>
+              <span><strong>Tips Edinburgh:</strong> Hindari mendaki jalan basah saat hujan rintik; jalur Market Street datar sempurna.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DUAL LANES ===== -->
+    <section class="section" style="background:var(--surface-container-low);">
+      <div class="container">
+        <div class="lanes-header">
+          <span class="section-label">Sistem Jalur Terpisah</span>
+          <h2 class="section-title" style="margin-top:0.25rem;">Dua Jalur Ekspres: Dirancang Bebas Macet</h2>
+          <p class="section-subtitle">
+            Hatch fisik kami memisahkan antrean belanja langsung dengan penjemputan online pre-order agar Anda tidak terlambat mengejar kereta pagi.
+          </p>
+        </div>
+
+        <div class="lanes-grid">
+
+          <div class="lane-card">
+            <div class="lane-inner">
+              <span class="lane-badge lane-badge--primary">
+                <span class="material-symbols-outlined icon-sm">touch_app</span>
+                JALUR A • FLASH WALK-IN
+              </span>
+              <h3 class="lane-title">Walk-In Flash Ordering &amp; Tap-to-Pay</h3>
+              <p class="lane-desc">
+                Datang langsung ke jendela kiri, pilih espresso &amp; viennoiserie favorit di layar kasir ringkas, lalu selesaikan pembayaran nirsentuh.
+              </p>
+              <ul class="lane-list">
+                <li><span class="material-symbols-outlined icon-sm is-primary">speed</span><span><strong>Rata-rata 30 detik</strong> proses checkout kartu / Apple Pay</span></li>
+                <li><span class="material-symbols-outlined icon-sm is-primary">inventory_2</span><span>Pastri hangat dibungkus dalam kantong insulasi termal kraft ramah lingkungan</span></li>
+                <li><span class="material-symbols-outlined icon-sm is-primary">receipt_long</span><span>Struk digital ramah lingkungan dikirim langsung via SMS/AirDrop</span></li>
+              </ul>
+            </div>
+            <div class="lane-progress-wrap">
+              <div class="lane-progress-label">
+                <span>Kecepatan Eksekusi:</span>
+                <span class="lane-progress-value--primary">Sangat Cepat (~30 Detik)</span>
+              </div>
+              <div class="lane-progress-bar">
+                <div class="lane-progress-fill is-primary"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lane-card is-tertiary">
+            <div class="lane-inner">
+              <span class="lane-badge lane-badge--tertiary">
+                <span class="material-symbols-outlined icon-sm">bolt</span>
+                JALUR B • PRE-ORDER &amp; WHATSAPP
+              </span>
+              <h3 class="lane-title">Pre-Order Express Pickup (Tanpa Antre)</h3>
+              <p class="lane-desc">
+                Pesan saat masih di dalam gerbong kereta atau di kamar asrama. Sebutkan 4 digit nomor pesanan Anda di jendela kanan, langsung angkat dan jalan.
+              </p>
+              <ul class="lane-list">
+                <li><span class="material-symbols-outlined icon-sm is-tertiary">mark_chat_read</span><span>Integrasi bot WhatsApp: Pesan dengan 3 teks sederhana</span></li>
+                <li><span class="material-symbols-outlined icon-sm is-tertiary">hourglass_disabled</span><span><strong>0 Detik Menunggu:</strong> Pesanan sudah dikemas di rak penjemputan berpemanas</span></li>
+                <li><span class="material-symbols-outlined icon-sm is-tertiary">lock_reset</span><span>Kode pengambilan aman untuk menjamin ketepatan minuman susu nabati</span></li>
+              </ul>
+            </div>
+            <div class="lane-progress-wrap">
+              <div class="lane-progress-label">
+                <span>Kecepatan Eksekusi:</span>
+                <span class="lane-progress-value--tertiary">Langsung Ambil (~5 Detik)</span>
+              </div>
+              <div class="lane-progress-bar">
+                <div class="lane-progress-fill is-tertiary"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WAYFINDING ===== -->
+    <section class="section" id="wayfinding">
+      <div class="container">
+        <div class="wayfind-header">
+          <div>
+            <span class="section-label">Panduan Navigasi Visual</span>
+            <h2 class="section-title" style="margin-top:0.25rem;">Dari Peron Waverley ke Roti Panas: 4 Langkah Mudah</h2>
+            <p class="section-subtitle">
+              Ikuti petunjuk fotografi langkah-demi-langkah dari pintu keluar stasiun melintasi Scotsman Steps.
+            </p>
+          </div>
+          <span class="wayfind-signpost">
+            <span class="material-symbols-outlined icon-sm">signpost</span>
+            Jalur Bersih &amp; Terang
+          </span>
+        </div>
+
+        <div class="wayfind-grid">
+
+          <div class="wayfind-card">
+            <div class="wayfind-media">
+              <img class="wayfind-img" alt="Edinburgh Waverley station concourse with travelers walking toward North Bridge exit."
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq6BX3OWfhHv2VlRqq4mLZj3x_AddzdJjl--oDhh52gfs6RRQHMwVinQOn9c3UQ-330Nl5lJ-2Kb1QdqGaitGzZidNTSRP5pfkZfrVYCZi8oL99h5cVQAj_5fByHYN8r5t08AfdpbUxUG2JqChE0LNhEHph0QljZzEHVfTXeRGMFcfOlk4Q4_8WqjJc9CyQeBq27qcon1as-vAz9vHqkUKJmTasB40K0xv0z73Kg" />
+              <div class="wayfind-num">1</div>
+            </div>
+            <div class="wayfind-body">
+              <div>
+                <h4 class="wayfind-title">Keluar Stasiun Waverley</h4>
+                <p class="wayfind-desc">Tinggalkan peron dan ambil arah <em>Market Street Exit</em> atau <em>North Bridge Steps</em>.</p>
+              </div>
+              <div class="wayfind-meta">
+                <span class="material-symbols-outlined icon-sm">east</span> Estimasi: 30 Detik
+              </div>
+            </div>
+          </div>
+
+          <div class="wayfind-card">
+            <div class="wayfind-media">
+              <img class="wayfind-img" alt="The famous historic Scotsman Steps staircase in Edinburgh."
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTkwpONpoN-T9yFd3x7li5YEpmG_NWU35KXMUOLKcopoJiWtK4UzaJF_B4ttpvbve0A1Ka-lperpFhruC8SjzujlNhy-xiUQG-_FCB10pI_nNc7fuT1CgytyA63aZABxphiIhUxGSjj0Unal8KzkivaiC9E8YbNtZfznUjlQkyizRiMS_xHzFJbVJENK2d7onsLhWU2AKCpmVKmxyRE__iZiwB-50fKEBvlmXrWw" />
+              <div class="wayfind-num">2</div>
+            </div>
+            <div class="wayfind-body">
+              <div>
+                <h4 class="wayfind-title">Scotsman Steps</h4>
+                <p class="wayfind-desc">Gunakan tangga marmer bersejarah Scotsman Steps atau lift stasiun untuk mencapai level Market Street.</p>
+              </div>
+              <div class="wayfind-meta">
+                <span class="material-symbols-outlined icon-sm">east</span> Estimasi: 45 Detik
+              </div>
+            </div>
+          </div>
+
+          <div class="wayfind-card">
+            <div class="wayfind-media">
+              <img class="wayfind-img" alt="Cobblestone pedestrian corridor on Market Street Edinburgh."
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-yXg7WsIVqna9CjrdsZje80N3cnysb89GmJTfd_cmfLDIyIJi1lD0TI7kd32LCKaDRJOwbwfzkhGHEVMEnT7J4EF8EGlZmaEcPvV8V4oO1Mw2vxVFCejcTkmV0G7xLIXH6madmnZ-Dso435hjC2Y3FqamQetLj7ZOp5b2O_DAtlYUqXc-Wu1dnENlrWjmXQrIyGFAj6BnXBGGjIirnsOZKnxWRW7c2zRndONpPw" />
+              <div class="wayfind-num">3</div>
+            </div>
+            <div class="wayfind-body">
+              <div>
+                <h4 class="wayfind-title">Belok Kiri ke Market St</h4>
+                <p class="wayfind-desc">Tepat di ujung tangga, tengok ke kiri menuju zona pejalan kaki No. 42 (City Art Centre di seberang).</p>
+              </div>
+              <div class="wayfind-meta">
+                <span class="material-symbols-outlined icon-sm">east</span> Estimasi: 30 Detik
+              </div>
+            </div>
+          </div>
+
+          <div class="wayfind-card">
+            <div class="wayfind-media">
+              <img class="wayfind-img" alt="Exterior of Grab n Go artisan walk-up bakery hatch in Edinburgh."
+                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBelt16oWl69TIBfGid_sRV3wooDznlmC-Cyuw1OKARPmvf8cZaqlVp1h8BBp4SiwtrJ10eIeywqsSss1RGz9UI3udKybl1xa3FV6y9Fbf2T8Ydj02YIwvMbuhAjeBNUU6k27d5Sas1-0FNx-IEHh3e2IOzFowsAgAFAf0wo48scufTmVEjvbcnG0eMv9nswIwf06XlZVIMHU6XjjmYRqnBVVAoGS0aE7JwNa3TA" />
+              <div class="wayfind-num is-final">4</div>
+            </div>
+            <div class="wayfind-body">
+              <div>
+                <h4 class="wayfind-title">Tiba di Hatch #1</h4>
+                <p class="wayfind-desc">Pilih Jalur A untuk pesan langsung atau Jalur B untuk langsung mengambil pesanan pre-order Anda.</p>
+              </div>
+              <div class="wayfind-meta is-done">
+                <span class="material-symbols-outlined icon-sm">check_circle</span> Kopi Panas di Tangan!
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TELEMETRY ===== -->
+    <section class="telemetry-section">
+      <div class="container">
+        <div class="telemetry-grid">
+
+          <div class="telemetry-card">
+            <div class="telemetry-card-head">
+              <div class="telemetry-live">
+                <span class="dot"></span>
+                Live Sensor Hatch #1
+              </div>
+              <span class="telemetry-sync">Sinkronisasi: Real-Time</span>
+            </div>
+
+            <div class="telemetry-metrics">
+              <div class="telemetry-metric">
+                <div class="telemetry-metric-label">Waktu Tunggu Saat Ini</div>
+                <div class="telemetry-metric-value is-primary" id="wait-timer">01:45</div>
+                <div class="telemetry-metric-sub">Menit : Detik</div>
+              </div>
+              <div class="telemetry-metric">
+                <div class="telemetry-metric-label">Kapasitas Antrean</div>
+                <div class="telemetry-metric-value is-tertiary">Optimal</div>
+                <div class="telemetry-metric-sub">&lt; 3 Orang per Jalur</div>
+              </div>
+            </div>
+
+            <div class="chart-wrap">
+              <div class="chart-head">
+                <span class="chart-label">Pola Kepadatan Harian Hatch (GMT)</span>
+                <span class="chart-peak-label">Peak: 07:45 - 08:30</span>
+              </div>
+              <svg class="chart-svg" fill="none" viewBox="0 0 400 90" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="rushGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+                    <stop offset="0%" stop-color="#9f3c16" stop-opacity="0.35"></stop>
+                    <stop offset="100%" stop-color="#9f3c16" stop-opacity="0"></stop>
+                  </linearGradient>
+                </defs>
+                <path d="M0,80 Q50,75 80,60 T140,15 T180,65 T250,55 T320,40 T400,75 L400,90 L0,90 Z" fill="url(#rushGrad)"></path>
+                <path d="M0,80 Q50,75 80,60 T140,15 T180,65 T250,55 T320,40 T400,75" fill="none" stroke="#9f3c16" stroke-width="3"></path>
+                <circle class="chart-peak-dot" fill="#9f3c16" cx="140" cy="15" r="5"></circle>
+                <text fill="#1c1c18" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="700" text-anchor="middle" x="140" y="8">07:45 - 08:30 Peak</text>
+                <text fill="#8a726a" font-family="Plus Jakarta Sans, sans-serif" font-size="8" x="5" y="88">06:30</text>
+                <text fill="#8a726a" font-family="Plus Jakarta Sans, sans-serif" font-size="8" x="135" y="88">08:00</text>
+                <text fill="#8a726a" font-family="Plus Jakarta Sans, sans-serif" font-size="8" x="245" y="88">12:30</text>
+                <text fill="#8a726a" font-family="Plus Jakarta Sans, sans-serif" font-size="8" x="375" y="88">18:30</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="telemetry-side">
+            <div>
+              <span class="section-label section-label--muted">Komitmen Pelayanan Cepat</span>
+              <h3 class="telemetry-side-title" style="margin-top:0.25rem;">"Edinburgh Commuter Guarantee"</h3>
+              <p class="telemetry-side-desc">
+                Jika pesanan kopi &amp; sarapan Anda memakan waktu lebih dari 4 menit sejak pemindaian kartu di Jalur A tanpa pemberitahuan sebelumnya, kami berikan voucher sarapan gratis untuk hari berikutnya.
+              </p>
+            </div>
+
+            <div class="guarantee-list">
+              <div class="guarantee-item">
+                <span class="material-symbols-outlined icon-md is-primary">support_agent</span>
+                <div>
+                  <div class="guarantee-title">Ada Kereta Terlambat atau Pesanan Rombongan?</div>
+                  <div class="guarantee-desc">
+                    Hubungi Hatch Manager langsung di <a href="tel:+621234565789">+62 1234565789</a> untuk menyiapkan pesanan bulk sebelum Anda tiba di peron.
+                  </div>
+                </div>
+              </div>
+              <div class="guarantee-item">
+                <span class="material-symbols-outlined icon-md is-tertiary">park</span>
+                <div>
+                  <div class="guarantee-title">Bebas Plastik Sekali Pakai</div>
+                  <div class="guarantee-desc">
+                    Bawa keep-cup Anda sendiri dan nikmati diskon 25p untuk semua varian flat white &amp; batch brew.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="telemetry-actions">
+              <a class="btn btn-primary" href="https://maps.google.com/?q=42+Market+Street+Edinburgh" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined icon-sm">directions</span>
+                <span>Petunjuk Arah Jalan Kaki</span>
+              </a>
+              <a class="btn btn-secondary" href="https://wa.me/621234565789?text=Halo%20Grab%20n%20Go%20Edinburgh!%20Saya%20ingin%20pre-order%20ke%20Hatch%20Waverley" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined icon-sm" style="color:var(--tertiary)">chat</span>
+                <span>Chat WhatsApp Manager</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ TILES ===== -->
+    <section class="faq-tiles-section">
+      <div class="container">
+        <div class="faq-tiles-head">
+          <h3 class="faq-tiles-title">Pertanyaan Populer Akses Hatch</h3>
+          <span class="faq-tiles-meta">EH1 1DE Walk-Up Guide</span>
+        </div>
+
+        <div class="faq-tiles-grid">
+          <div class="faq-tile">
+            <div class="faq-tile-title">Apakah bisa parkir mobil?</div>
+            <p class="faq-tile-desc">
+              Market Street merupakan koridor pejalan kaki berprioritas transit. Tersedia drop-off point 30 detik di Waverley Bridge atau parkir umum di New Street (3 menit jalan kaki).
+            </p>
+          </div>
+          <div class="faq-tile">
+            <div class="faq-tile-title">Apakah ramah kursi roda?</div>
+            <p class="faq-tile-desc">
+              Sangat ramah. Dari Waverley Station, hindari Scotsman Steps dan gunakan lift stasiun langsung ke Market Street; seluruh jalur menuju hatch beraspal mulus tanpa undakan tangga.
+            </p>
+          </div>
+          <div class="faq-tile">
+            <div class="faq-tile-title">Bagaimana cara pesan via WhatsApp?</div>
+            <p class="faq-tile-desc">
+              Kirim pesan ke +62 1234565789 dengan format nama &amp; pesanan minimal 10 menit sebelum tiba. Anda akan menerima kode pesanan untuk ditunjukkan di Jalur B.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container" style="padding-top:var(--space-xl);padding-bottom:var(--space-xl);">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-title">Grab n Go! Edinburgh</span>
+          <p class="footer-desc">Wild yeast sourdough, third-wave espresso, and dynamic commuter bites on the pulse of Edinburgh Waverley.</p>
+          <span class="footer-badge">
+            <span class="material-symbols-outlined icon-sm">eco</span>
+            100% Compostable Packaging
+          </span>
+        </div>
+
+        <div>
+          <h3 class="footer-title" style="font-size:18px;">Explore Sections</h3>
+          <ul class="footer-list" style="list-style:none;padding:0;margin:0.5rem 0 0;">
+            <li class="footer-item"><a href="#">Home / Landing</a></li>
+            <li class="footer-item"><a href="#">Artisan Menu &amp; Ordering</a></li>
+            <li class="footer-item"><a href="#">About Us &amp; Baker Story</a></li>
+            <li class="footer-item"><a href="#">Express Hatch &amp; Pickup Info</a></li>
+            <li class="footer-item"><a href="#">Fast Order &amp; WhatsApp CS</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title" style="font-size:18px;">Waverley Hatch &amp; Hours</h3>
+          <p class="footer-address">42 Market Street, Old Town<br/>Edinburgh, EH1 1DE<br/>Steps from Edinburgh Waverley Station</p>
+          <p class="footer-hours">Mon – Fri: 06:30 – 16:30<br/>Sat – Sun: 07:30 – 17:00</p>
+        </div>
+
+        <div>
+          <h3 class="footer-title" style="font-size:18px;">Direct Support &amp; Social</h3>
+          <p class="footer-desc">Fast line updates, catering bookings, or quick query resolution via WhatsApp concierge.</p>
+          <div class="footer-socials">
+            <a class="footer-social" href="#"><span class="material-symbols-outlined icon-sm">chat</span></a>
+            <span class="footer-social"><span class="material-symbols-outlined icon-sm">camera_alt</span></span>
+            <span class="footer-social"><span class="material-symbols-outlined icon-sm">mail</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Grab n Go! Edinburgh Ltd. Hand-baked daily with wild yeasts.</p>
+        <div class="footer-links">
+          <span>Allergen Guide</span>
+          <span>Privacy Policy</span>
+          <span>Pickup FAQ</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WAIT TIMER JITTER ===== -->
+  <script>
+    (function () {
+      const timerEl = document.getElementById('wait-timer');
+      if (!timerEl) return;
+      let seconds = 105;
+      setInterval(() => {
+        const delta = (Math.random() > 0.5 ? 1 : -1) * Math.floor(Math.random() * 2);
+        seconds = Math.max(90, Math.min(135, seconds + delta));
+        const m = Math.floor(seconds / 60);
+        const s = seconds % 60;
+        timerEl.textContent = '0' + m + ':' + (s < 10 ? '0' : '') + s;
+      }, 4500);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Grab n Go! Edinburgh — Menu &amp; Ordering</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a class="brand" href="#">
+          <img alt="Grab n Go! Edinburgh Logo" class="brand-logo"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRLm0efgaPnzwy4eVOLjxKrdFDx1dQaRipD3A9UMlK5FbaaaxmqYH0Jnvo0Q3qB4NnMm1j1pQucCsIpX-T_PKq9vYI6AJcs4ftgjjx6bdl6xz_lrwUDBLpCrOOdRmEIem1Bi-SJ4Nh5tWyleW2rHOYgNKMd96satE8BN3SNKQFQjbCW5U8oYB_VJ2W3bQGGAUo4NMd938LmgyZJhc1kK1MfwUrVGCiHAHgrtGBBQ" />
+          <span class="brand-text">
+            <span class="brand-name">Grab n Go! Edinburgh</span>
+            <span class="brand-tagline">Artisan Bakery &amp; Hatch</span>
+          </span>
+        </a>
+        <span class="prep-pill">
+          <span class="material-symbols-outlined icon-sm" style="color:var(--primary)">bolt</span>
+          <span>Prep: ~4m pick-up</span>
+        </span>
+      </div>
+
+      <nav class="main-nav">
+        <a class="nav-link" href="/home.html">Home</a>
+        <a class="nav-link nav-link--active" href="/menu.html">Menu &amp; Ordering</a>
+        <a class="nav-link" href="/about.html">About &amp; Story</a>
+        <a class="nav-link" href="/location.html">Location &amp; Hatch</a>
+        <a class="nav-link" href="/cs.html">Fast Order &amp; WhatsApp</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary" href="#">
+          <span class="material-symbols-outlined icon-sm">shopping_bag</span>
+          <span>Order Now!</span>
+        </a>
+        <span class="icon-btn" style="background:var(--surface-container-high);color:var(--on-surface);">
+          <span class="material-symbols-outlined icon-sm">support_agent</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="page-main">
+
+    <!-- ===== MENU HERO ===== -->
+    <section class="menu-hero">
+      <div class="container">
+        <div class="menu-hero-inner">
+          <div class="menu-hero-copy">
+            <span class="menu-hero-pill">
+              <span class="material-symbols-outlined icon-sm">local_fire_department</span>
+              Oven Pagi Di Market Street EH1
+            </span>
+            <h1 class="menu-hero-title">Artisan Menu &amp; Daily Bakes</h1>
+            <p class="menu-hero-desc">
+              Pilih sajian segar oven pagi kami dan racikan specialty barista Edinburgh. Pesan cepat tanpa antre, ambil kilat di walk-up hatch &lt; 3 menit!
+            </p>
+          </div>
+
+          <div class="hatch-status-panel">
+            <div class="hatch-status-pill">
+              <span class="hatch-status-dot"></span>
+              Hatch Aktif: Jalur Cepat Waverley
+            </div>
+            <div class="hatch-status-meta">
+              <span class="material-symbols-outlined icon-sm">timer</span>
+              Rerata Siap: <strong>2 Menit 40 Detik</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-filter-wrap">
+          <!-- Categories -->
+          <div class="category-tabs" id="categoryFilterContainer">
+            <button class="category-btn is-active" data-category="all">Semua Kategori (12)</button>
+            <button class="category-btn" data-category="sourdough">Artisan Sourdough &amp; Sandwiches</button>
+            <button class="category-btn" data-category="bagels">Fresh Bagels &amp; Baguettes</button>
+            <button class="category-btn" data-category="pastries">Sweet Pastries &amp; Bakes</button>
+            <button class="category-btn" data-category="coffee">Specialty Coffee</button>
+            <button class="category-btn" data-category="non-coffee">Non-Coffee &amp; Refreshers</button>
+            <button class="category-btn is-combo" data-category="combos">
+              <span class="material-symbols-outlined icon-sm">stars</span>
+              Express Meal Combos (£8.50)
+            </button>
+          </div>
+
+          <!-- Diet filters -->
+          <div class="diet-filters">
+            <span class="diet-filters-label">Filter Diet:</span>
+            <button class="diet-filter-btn" data-diet="veg">
+              <span class="material-symbols-outlined icon-xs">spa</span>
+              Vegetarian Friendly
+            </button>
+            <button class="diet-filter-btn" data-diet="vegan">
+              <span class="material-symbols-outlined icon-xs">eco</span>
+              Vegan Options
+            </button>
+            <button class="diet-filter-btn" data-diet="gf">
+              <span class="material-symbols-outlined icon-xs is-primary">grain</span>
+              Gluten-Free Available
+            </button>
+            <button class="diet-filter-btn" data-diet="nutfree">
+              <span class="material-symbols-outlined icon-xs is-secondary">verified</span>
+              Nut-Free Certified
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATALOG + CART ===== -->
+    <div class="menu-body">
+      <div class="container menu-body-inner">
+
+        <!-- ===== CATALOG COLUMN ===== -->
+        <div class="menu-catalog-col">
+
+          <div class="live-batch-bar">
+            <div class="live-batch-info">
+              <span class="material-symbols-outlined icon-lg">oven_gen</span>
+              <div>
+                <p class="live-batch-title">Pagi Ini: Batch #03 Baru Matang (06:45)</p>
+                <p class="live-batch-desc">Dibuat menggunakan mentega artisanal Isle of Mull &amp; ragi alami 48 jam.</p>
+              </div>
+            </div>
+            <span class="live-batch-status">Stock Tersedia Real-time</span>
+          </div>
+
+          <div class="catalog-grid" id="cardsGrid">
+
+            <!-- 1. Sourdough Renyah Hot Melt -->
+            <div class="catalog-card" data-category="sourdough" data-diet="veg">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Toasted artisan sourdough sandwich with molten cheddar."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuB18pVmcl1j2470yoJFOrBmeI82t1Rg0rM3Yogpqisv5cw6EcEUbtECP56j0Vrh1s-egVflMbLsxZVhnRfXO-08T3nGe_uGlheb5skjIK6_UodMVudSsqt3wo-k_wJO_ZrV4D0qARQKtcnOYUdlljrRnj9BjLdjSNkz8cTZ2r_407oyl5D3mXZ8DrIC_UrAxmwVc4vQN-2DGJZUcE7jmcnIy8JbMq0o78OnvepKxQ" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--primary">Best Seller</span>
+                  <span class="catalog-tag catalog-tag--white">&lt; 2 mins</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Sourdough Renyah Hot Melt</h3>
+                    <span class="catalog-price">£6.80</span>
+                  </div>
+                  <p class="catalog-desc">Double Isle of Mull vintage cheddar, karamelisasi bawang bombay thyme, dipanggang renyah dengan butter Skotlandia.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--veg">Vegetarian</span>
+                    <span class="catalog-kcal">490 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Sourdough Renyah Hot Melt', 6.80)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Loch Fyne Smoked Salmon Bagel -->
+            <div class="catalog-card" data-category="bagels" data-diet="nutfree">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Poppyseed bagel with smoked salmon and cream cheese."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2fSNukyEH-xjt2uX0jyRa4t-9LPkwkPdtTpe5ZBS0s_H2ns_mUVRgMIT-qHoEnUTQzScRDwahXPtW9CwKtIUdDFvQmvXT28GuL6iCZCdy2LyjIZFwaPUqt8tFwevDJqeK5kPDX4-qxfia38mxQYxafMoc3NJZLQA-rwyB5va0-o69XKcx1lhKNSGh7Om_Zw_Ysk27yE86-loYq44jb7Dwne1QlKfq5F9VLhBdlw" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--white">Fresh Scottish Catch</span>
+                  <span class="catalog-tag catalog-tag--white">&lt; 1 min</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Bagel Klasik Loch Fyne Smoked Salmon</h3>
+                    <span class="catalog-price">£6.50</span>
+                  </div>
+                  <p class="catalog-desc">Smoked salmon Argyll asli, cream cheese herba dill segar, capers asin, disajikan di bagel wijen rebus pagi.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--nutfree">Nut-Free</span>
+                    <span class="catalog-kcal">420 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Bagel Klasik Loch Fyne Salmon', 6.50)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Baguette Cured Ham & Butter -->
+            <div class="catalog-card" data-category="bagels" data-diet="nutfree">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Crispy French demi-baguette with cured ham and butter."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Vu_i6Zy1OEfnwmSj6dEwmfhf_K0kfOhB0GDUGMkB1TeeDTYb61t71NFZviZGsBhx5xfhBBMPkYfzHMeH0FmmxW68iDmR4yK0XAWx3GVewzhIjnh-yDU2xGBMWqnaKgxrYWoJw04KLPhyh4yXf7Fm8JCFzlSb_xo2ZL7eX3yTBMaRrUc8-RJjlEZM7IWuPUFAZ_9e5_Tarsg4hMWEBrxmIEdSKT2OI2tbh095IA" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--surface">Fresh Baked 05:00</span>
+                  <span class="catalog-tag catalog-tag--white">&lt; 1 min</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Baguette Cured Ham &amp; French Butter</h3>
+                    <span class="catalog-price">£5.80</span>
+                  </div>
+                  <p class="catalog-desc">Baguette kerak renyah, ham pilihan, olesan butter Normandy tebal, acar timun mini cornichons tajam gurih.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--nutfree">Nut-Free</span>
+                    <span class="catalog-kcal">460 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Baguette Ham &amp; Butter', 5.80)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Pastrami Dijon Melt -->
+            <div class="catalog-card" data-category="sourdough" data-diet="nutfree">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Gourmet toasted sourdough pastrami melt."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE0r58u8n1N-Fkwkc-Mg2wncYeS0JPBw26G40A85iF9V8_sEHYb-uIc9Dnwx_8mxBLYB0mPe_9P0JJYwQzJNnabndXuMTPE1kbqZb5c9lD5xUyRkPSngRAMYshrbKFt8Jm0jNXkfpxNmnYLbTpwtlQ1-zhexNWbxSNQG0Q4xidEGEBSU9gxxGxLiXBuCk4hvRzJsCUSqsyrLfAJyRInTALXWvmoCs9Ppr5HdLMhw" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--primary">Chef Special</span>
+                  <span class="catalog-tag catalog-tag--white">&lt; 2 mins</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Pastrami Dijon Melt Sourdough</h3>
+                    <span class="catalog-price">£6.90</span>
+                  </div>
+                  <p class="catalog-desc">Irisan smoked pastrami tebal, lumeran keju Gruyere Swiss, sauerkraut segar, dan cocolan whole grain Dijon mustard.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--nutfree">High Protein</span>
+                    <span class="catalog-kcal">520 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Pastrami Dijon Melt', 6.90)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 5. Normandy Croissant -->
+            <div class="catalog-card" data-category="pastries" data-diet="veg">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Flaky golden brown French croissant."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn2zWUkbuvd-GTMEHkcU73HsB3Zr72r6cRIBGIFFJ_YR8purP8bKEPMvfhtkQ0g3XQva_3ikZpSTuNXTSHlWvGyQijwS0zbVFnmdqjkRBBDubUnl5W-PTtF2dlwNwukL_SMKsdcNTDtGQEfX8B29vVQG6SVKE7S7laLQxvHbB0265E-WN0gJax_nTwGEiXQGGDA7yarLaUzEYABIIBpk08Qg6a_SUeL1Yrf-UQEg" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--surface">Fresh Baked 05:00</span>
+                  <span class="catalog-tag catalog-tag--white">Instan</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Buttery Normandy Croissant</h3>
+                    <span class="catalog-price">£3.60</span>
+                  </div>
+                  <p class="catalog-desc">Lapisan flaky berongga sarang lebah sempurna dengan 100% Normandy AOP churned butter. Wangi harum semerbak.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--veg">Vegetarian</span>
+                    <span class="catalog-kcal">290 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Normandy Croissant', 3.60)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 6. Pain au Chocolat -->
+            <div class="catalog-card" data-category="pastries" data-diet="veg">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Golden pain au chocolat with molten Belgian chocolate."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2R-Njfzu3IMbxfFclKMfSSAUA-LhkyscW5eeGQY4TTKC_-KN52SeaKmKG73xGKfnApPgiDVKzcBrdw0e364ojBajfNy4CyapTbBcamyDvw2d4ybllNO2SvvhAuDOI5wLiT00gWTivWotLQ5ynp0_1RGi1PxRTjPzUsap3MT6JT_gcbYpUIomli1uCkwAIm5nT5yG4TpWCkrQu2T_C2yBUyICgbYWgNN-Jq-a_6A" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--primary">Favorit Pagi</span>
+                  <span class="catalog-tag catalog-tag--white">Instan</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Pain au Chocolat Belga 64%</h3>
+                    <span class="catalog-price">£3.95</span>
+                  </div>
+                  <p class="catalog-desc">Dua batang dark chocolate murni Belgia 64% di dalam gulungan pastry renyah bermentega tinggi.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--veg">Vegetarian</span>
+                    <span class="catalog-kcal">340 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Pain au Chocolat Belga', 3.95)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 7. Cinnamon Roll -->
+            <div class="catalog-card" data-category="pastries" data-diet="veg">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Warm cinnamon roll with vanilla bean cream cheese glaze."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaE8uhPTrM_L4pDqsqoCK3p7fJBqvvQZflMM1COz8FWSPMqBDKATS5Lo6_dpWp4iEYXLsuP5TrIDADflFHD9w6BLzyrJotTpgMEJKSh85DI9LBEo4v_CEf3FasSn7E3tm0AcRS9BiC_2zT_-pTD-ichuXY21Vy1SiRJHOQeEF0z9_H3vo3swUcb2ws1qL-GCn_E1VOKB0BqyUp-9gGbgh6R4Q5UdLyrs-MY5ivyg" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--surface">Hangat Oven</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Cinnamon Roll Vanilla Glazed</h3>
+                    <span class="catalog-price">£4.20</span>
+                  </div>
+                  <p class="catalog-desc">Adonan brioche lembut beraroma kayu manis Ceylon dengan lelehan frosting krim keju vanila Madagaskar asli.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--veg">Vegetarian</span>
+                    <span class="catalog-kcal">410 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Cinnamon Roll Glazed', 4.20)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 8. Basque Cheesecake -->
+            <div class="catalog-card" data-category="pastries" data-diet="gf">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Slice of Basque burnt cheesecake."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPibKvAS2a_G3mzgvyqcdhB2RlNJba-w2p1ND_yMM8y7DI6XP80w6B6FH-pSVVoMba5iKrI0rdUoXISMKLfqxOha7EpOd-UBDzalj-aSIkodeHofCQin7_Q_Ijie6-_VTAH0YH2Sg09UmXXI2OZhqAUMEmJsSAjqSIzEUSq25ZGRfjN6iqLIk-4MdPiiWKaaqWerHW1K11Ck6h9X7SvNfd0V4h5q0MgsXkNGJhxA" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--primary">Gluten-Free</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Basque Burnt Cheesecake</h3>
+                    <span class="catalog-price">£4.75</span>
+                  </div>
+                  <p class="catalog-desc">Permukaan karamel terpanggang gosong aromatik dengan bagian tengah custard krim keju leleh lembut. Tanpa terigu.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--gf">Gluten-Free</span>
+                    <span class="catalog-kcal">380 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Basque Burnt Cheesecake', 4.75)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 9. Flat White -->
+            <div class="catalog-card" data-category="coffee" data-diet="veg">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Velvety flat white with microfoam latte art."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6T8G4eWyfVAY4yKtfZ5-_T0byYPB-o8BF82T3sk9vy4DVNXCtPCIoD3orO90tpA6aM-T8VpDfvuE2MBpNOqwBH6T--pcj7JHkRHear6T5yz75jLYEev2WO_gUubO9mgJknW1XcTH6ASwcZOCJP_EHvux3p9YFGVsAKO674Y6vtX8cYJThTW2sFnBxdaTD3w_bs877_lGvQPiLuJFRInYscGOWgMxAJBD4OUNL4w" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--primary">Barista Signature</span>
+                  <span class="catalog-tag catalog-tag--white">&lt; 2 mins</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Edinburgh Blend Flat White</h3>
+                    <span class="catalog-price">£3.50</span>
+                  </div>
+                  <p class="catalog-desc">Double shot espresso house blend sangrai lokal (notes: milk chocolate &amp; hazelnut), susu steamed sutra microfoam.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--veg">Oat Milk +£0.40</span>
+                    <span class="catalog-kcal">130 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Flat White (Edinburgh Blend)', 3.50)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 10. Oat Milk Cortado -->
+            <div class="catalog-card" data-category="coffee" data-diet="vegan">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Glass cortado with espresso and steamed oat milk."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAljVTcYWh0Z12kf5Lb4IF3RV4ygHbQGCAmEKXQ_zQy6tNP3xaFNk8L-m6xLyhaoGsUjYNRiBKu6F0QzJR8ckYExHhvCZqZlwelVt11K2mUGzc6m2SpTbcmR8pQvm2a76lf_QV4sfACpvcYqcbi7wxeBN5g7Y5lMAywzT3vPwMCNyVnRZGbsn8suhgNSW4LDKjIEmZSgwf-aeaJqi4BOfrxBDnG8C4U-rPpXwxIhg" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--tertiary">100% Plant-Based</span>
+                  <span class="catalog-tag catalog-tag--white">&lt; 1 min</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Oat Milk Cortado (1:1)</h3>
+                    <span class="catalog-price">£3.30</span>
+                  </div>
+                  <p class="catalog-desc">Rasio seimbang 1:1 antara espresso pekat dan oat milk barista edition yang dihangatkan lembut. Intens dan gurih.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--vegan">Vegan Certified</span>
+                    <span class="catalog-kcal">85 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Oat Milk Cortado', 3.30)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 11. Ceremonial Matcha -->
+            <div class="catalog-card" data-category="non-coffee" data-diet="veg">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Vibrant green ceremonial Uji matcha latte."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgAeqtaGQixq5hD0AthFkngJRua3hakkbUQ0YYA9wtroOkb54s3_PHoi4VsmtqxUlkEey8mgt2FG1XwSZqxWtHvNXmBDCzEgd3g3XvNR6K_a0C7Te-qOyFJg2wXyX0mtZmSm4KHC8DoceIKy2ZE22ZAg7Eu1TZevUN1fGLhBvpCkcOYDc4zAjsmQpjrnNeRMjyPfRwM5ZVPcvL054U-byeYoF3LJBexM8WgBCLhQ" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--soft">First Harvest Uji</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Ceremonial Uji Matcha Latte</h3>
+                    <span class="catalog-price">£4.10</span>
+                  </div>
+                  <p class="catalog-desc">Bubuk matcha ceremonial grade asal Kyoto Jepang, dikocok bambu tradisional dengan susu segar pilihan (hangat/dingin).</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--veg">Antioxidant Rich</span>
+                    <span class="catalog-kcal">160 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Ceremonial Uji Matcha', 4.10)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 12. Belgian Hot Chocolate -->
+            <div class="catalog-card" data-category="non-coffee" data-diet="veg">
+              <div class="catalog-media">
+                <img class="catalog-img" alt="Rich 70% Belgian hot chocolate with toasted marshmallow."
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg48wfRJbjj7BZGWH7_ZiBbWtzRiRloV_towkLA6uaEbdzJNZ-ilFmETV8VdvPMCQbTGNx4Auk42DC5-lw-JxYLnFAp8bPyAchCNlOGuOvOkLeSw2RXIzxAleqg2bh9p5gSd1-sWmGhUnjWaYyPrPPGjUK_e9HylFvD38WAYxboH1AApuA2XQ2r-ZIACSbCtMKbUNJhFatB2c9-s4ENFkDcR6uokJdaHBl8ZQM0w" />
+                <div class="catalog-tags">
+                  <span class="catalog-tag catalog-tag--secondary">Real Melted Chocolate</span>
+                </div>
+              </div>
+              <div class="catalog-body">
+                <div>
+                  <div class="catalog-title-row">
+                    <h3 class="catalog-title">Belgian Dark Chocolate 70%</h3>
+                    <span class="catalog-price">£3.90</span>
+                  </div>
+                  <p class="catalog-desc">Dilelehkan dari batangan cokelat hitam 70% asli tanpa pemanis buatan, kental, lembut, dan menghangatkan hawa dingin Edinburgh.</p>
+                  <div class="catalog-meta">
+                    <span class="catalog-diet-tag catalog-diet-tag--nutfree">Nut-Free</span>
+                    <span class="catalog-kcal">260 kcal</span>
+                  </div>
+                </div>
+                <button class="btn-add-cart" onclick="addToHatchCart('Belgian Hot Chocolate 70%', 3.90)">
+                  <span class="material-symbols-outlined icon-sm">add</span>
+                  <span>+ Masukkan ke Hatch Cart</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Combo Banner -->
+            <div class="combo-banner" data-category="combos" data-diet="nutfree">
+              <div class="combo-left">
+                <span class="combo-icon">
+                  <span class="material-symbols-outlined icon-xl">takeout_dining</span>
+                </span>
+                <div>
+                  <div class="combo-tags">
+                    <span class="combo-badge">Commuter Saver</span>
+                    <span class="combo-when">Semua Hari 06:30 - 11:00</span>
+                  </div>
+                  <h3 class="combo-title">Express Breakfast Combo Meal Deal</h3>
+                  <p class="combo-desc">1 Pilihan Sandvich/Bagel Apa Saja + 1 Minuman Specialty Coffee/Tea + Biskuit Shortbread Skotlandia.</p>
+                </div>
+              </div>
+              <div class="combo-right">
+                <div class="combo-price-block">
+                  <span class="combo-price-old">Nilai s/d £10.80</span>
+                  <p class="combo-price-new">Hanya £8.50</p>
+                </div>
+                <button class="btn-combo" onclick="addToHatchCart('Express Combo Deal (Sandwich + Drink)', 8.50)">
+                  Ambil Combo (£8.50)
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ===== STICKY CART SIDEBAR ===== -->
+        <div class="cart-col">
+          <div class="cart-card">
+            <div class="cart-header">
+              <div class="cart-header-left">
+                <span class="material-symbols-outlined icon-md">shopping_bag</span>
+                <h2 class="cart-title">Hatch Order Summary</h2>
+              </div>
+              <span class="cart-count-badge" id="cartItemCountBadge">2 Item</span>
+            </div>
+
+            <div class="cart-pickup-banner">
+              <div class="cart-pickup-row is-strong">
+                <span>Estimasi Siap</span>
+                <span class="cart-pickup-value">
+                  <span class="material-symbols-outlined icon-sm">bolt</span>
+                  ~2 Menit dari Pemesanan
+                </span>
+              </div>
+              <div class="cart-pickup-row is-muted">
+                <span>Loker Pengambilan:</span>
+                <span class="is-value">Express Hatch Bay #04</span>
+              </div>
+            </div>
+
+            <div class="cart-items-list" id="cartItemsList">
+              <div class="cart-item" data-cart-id="init-1">
+                <div class="cart-item-info">
+                  <span class="cart-item-name">Sourdough Renyah Hot Melt</span>
+                  <span class="cart-item-sub">1x • Hot Pressed</span>
+                </div>
+                <div class="cart-item-right">
+                  <span class="cart-item-price">£6.80</span>
+                  <button class="cart-remove" onclick="removeFromCart(this, 6.80)">
+                    <span class="material-symbols-outlined icon-sm">delete</span>
+                  </button>
+                </div>
+              </div>
+              <div class="cart-item" data-cart-id="init-2">
+                <div class="cart-item-info">
+                  <span class="cart-item-name">Edinburgh Blend Flat White</span>
+                  <span class="cart-item-sub">1x • Whole Milk Regular</span>
+                </div>
+                <div class="cart-item-right">
+                  <span class="cart-item-price">£3.50</span>
+                  <button class="cart-remove" onclick="removeFromCart(this, 3.50)">
+                    <span class="material-symbols-outlined icon-sm">delete</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-totals">
+              <div class="cart-total-row">
+                <span>Subtotal Menu</span>
+                <span id="subtotalVal">£10.30</span>
+              </div>
+              <div class="cart-total-row is-free">
+                <span>Biaya Layanan Hatch Pick-Up</span>
+                <span>GRATIS (£0.00)</span>
+              </div>
+              <div class="cart-total-row is-grand">
+                <span>Total Tagihan</span>
+                <span class="cart-total-value" id="totalVal">£10.30</span>
+              </div>
+            </div>
+
+            <div class="cart-cta">
+              <a class="btn-wa-checkout" id="whatsappCheckoutBtn"
+                 href="https://wa.me/447700900123?text=Halo%20Grab%20n%20Go%21%20Saya%20mau%20pesan%20kilat%20Hatch."
+                 target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined icon-md">chat</span>
+                <span>Checkout / Order via WhatsApp</span>
+              </a>
+              <p class="cart-cta-note">Pesan langsung terkirim ke dapur. Bayar saat tap di Hatch atau via Payment Link.</p>
+            </div>
+
+            <div class="eco-guarantee">
+              <span class="material-symbols-outlined icon-md">check_circle</span>
+              <span>Packaging 100% bebas plastik &amp; ramah lingkungan dibuat dari serat tanaman.</span>
+            </div>
+          </div>
+
+          <div class="help-tile">
+            <div>
+              <h4 class="help-title">Butuh Custom Khusus / Alergi?</h4>
+              <p class="help-desc">Tim barista kami sigap mengadaptasi pesanan.</p>
+            </div>
+            <a class="help-arrow" href="#">
+              <span class="material-symbols-outlined icon-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container" style="padding-top:var(--space-xl);padding-bottom:var(--space-xl);">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-title">Grab n Go! Edinburgh</span>
+          <p class="footer-desc">Wild yeast sourdough, third-wave espresso, and dynamic commuter bites on the pulse of Edinburgh Waverley.</p>
+          <span class="footer-badge">
+            <span class="material-symbols-outlined icon-sm">eco</span>
+            100% Compostable Packaging
+          </span>
+        </div>
+
+        <div>
+          <h3 class="footer-title" style="font-size:18px;">Explore Sections</h3>
+          <ul class="footer-list" style="list-style:none;padding:0;margin:0.5rem 0 0;">
+            <li class="footer-item"><a href="#">Home / Landing</a></li>
+            <li class="footer-item"><a href="#">Artisan Menu &amp; Ordering</a></li>
+            <li class="footer-item"><a href="#">About Us &amp; Baker Story</a></li>
+            <li class="footer-item"><a href="#">Express Hatch &amp; Pickup Info</a></li>
+            <li class="footer-item"><a href="#">Fast Order &amp; WhatsApp CS</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title" style="font-size:18px;">Waverley Hatch &amp; Hours</h3>
+          <p class="footer-address">42 Market Street, Old Town<br/>Edinburgh, EH1 1DE<br/>Steps from Edinburgh Waverley Station</p>
+          <p class="footer-hours">Mon – Fri: 06:30 – 16:30<br/>Sat – Sun: 07:30 – 17:00</p>
+        </div>
+
+        <div>
+          <h3 class="footer-title" style="font-size:18px;">Direct Support &amp; Social</h3>
+          <p class="footer-desc">Fast line updates, catering bookings, or quick query resolution via WhatsApp concierge.</p>
+          <div class="footer-socials">
+            <a class="footer-social" href="#"><span class="material-symbols-outlined icon-sm">chat</span></a>
+            <span class="footer-social"><span class="material-symbols-outlined icon-sm">camera_alt</span></span>
+            <span class="footer-social"><span class="material-symbols-outlined icon-sm">mail</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Grab n Go! Edinburgh Ltd. Hand-baked daily with wild yeasts.</p>
+        <div class="footer-links">
+          <span>Allergen Guide</span>
+          <span>Privacy Policy</span>
+          <span>Pickup FAQ</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MENU + CART JS ===== -->
+  <script>
+    let currentTotal = 10.30;
+    let itemCount = 2;
+
+    /* --- Filter by Category --- */
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const allItems     = document.querySelectorAll('#cardsGrid > [data-category]');
+
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryBtns.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+
+        const cat = btn.getAttribute('data-category');
+        allItems.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          const matches = (cat === 'all' || cardCat === cat);
+          card.classList.toggle('is-hidden', !matches);
+        });
+      });
+    });
+
+    /* --- Filter by Diet --- */
+    const dietBtns = document.querySelectorAll('.diet-filter-btn');
+    dietBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const diet = btn.getAttribute('data-diet');
+        const isActive = btn.classList.contains('is-active');
+
+        dietBtns.forEach(b => b.classList.remove('is-active'));
+
+        if (!isActive) {
+          btn.classList.add('is-active');
+          allItems.forEach(card => {
+            const matches = (card.getAttribute('data-diet') === diet);
+            card.classList.toggle('is-hidden', !matches);
+          });
+        } else {
+          allItems.forEach(card => card.classList.remove('is-hidden'));
+        }
+      });
+    });
+
+    /* --- Cart: Add --- */
+    function addToHatchCart(name, price) {
+      itemCount++;
+      currentTotal += price;
+
+      const cartList = document.getElementById('cartItemsList');
+      const itemRow = document.createElement('div');
+      itemRow.className = 'cart-item';
+      itemRow.innerHTML =
+        '<div class="cart-item-info">' +
+          '<span class="cart-item-name">' + name + '</span>' +
+          '<span class="cart-item-sub">1x • Fresh Hatch Prep</span>' +
+        '</div>' +
+        '<div class="cart-item-right">' +
+          '<span class="cart-item-price">£' + price.toFixed(2) + '</span>' +
+          '<button class="cart-remove" onclick="removeFromCart(this, ' + price + ')">' +
+            '<span class="material-symbols-outlined icon-sm">delete</span>' +
+          '</button>' +
+        '</div>';
+      cartList.appendChild(itemRow);
+      updateCartSummary();
+    }
+
+    /* --- Cart: Remove --- */
+    function removeFromCart(buttonElem, price) {
+      const row = buttonElem.closest('.cart-item');
+      if (row) {
+        row.remove();
+        itemCount = Math.max(0, itemCount - 1);
+        currentTotal = Math.max(0, currentTotal - price);
+        updateCartSummary();
+      }
+    }
+
+    /* --- Cart: Update UI --- */
+    function updateCartSummary() {
+      const subtotalEl = document.getElementById('subtotalVal');
+      const totalEl    = document.getElementById('totalVal');
+      const countBadge = document.getElementById('cartItemCountBadge');
+      const whatsappBtn = document.getElementById('whatsappCheckoutBtn');
+
+      if (subtotalEl) subtotalEl.textContent = '£' + currentTotal.toFixed(2);
+      if (totalEl)    totalEl.textContent    = '£' + currentTotal.toFixed(2);
+      if (countBadge) countBadge.textContent = itemCount + ' Item';
+
+      if (whatsappBtn) {
+        const msg = encodeURIComponent(
+          'Halo Grab n Go! Saya mau checkout keranjang Hatch saya dengan ' +
+          itemCount + ' item. Total: £' + currentTotal.toFixed(2) +
+          '. Siapkan untuk pickup sekarang.'
+        );
+        whatsappBtn.href = 'https://wa.me/447700900123?text=' + msg;
+      }
+    }
+  </script>
+</body>
+</html>
